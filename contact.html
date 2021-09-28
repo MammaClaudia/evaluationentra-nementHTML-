@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TUTTI MUSICIENS</title>
+  <title>TUTTI MUSICIENS - contact </title>
   <meta name="description" content="Association de musique Tutti musiciens ">
   <!----------------------- Bootstrap CSS ------------------------------->
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -55,7 +55,7 @@
     </div>
     <!------------------------------------barre de navigation--------------------------------------->
     <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-danger nav-nav">
-        <a title="tutti musiciens" class="navbar-brand" href="index.html">Tutti musiciens !<img class="logo" src="img/logo.png" alt="tutti musiciens"></a>
+        <a title="tutti musiciens" class="navbar-brand" href="index.html"><img class="logo" src="img/logo.png" alt="tutti musiciens"></a>
             <div class="don-btn-m"><button title="Faire un Don" class="btn btn-danger my-2 my-sm-0" type="submit">Faire un Don</button></div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
               aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,13 +63,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
               <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                   <a class="nav-link" href="index.html">ACCUEIL <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="events.html">EVENEMENTS</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item  active">
                   <a class="nav-link" href="contact.html">CONTACT</a>
                 </li>
               </ul>
@@ -81,5 +81,89 @@
           </nav>
       </header>
       </div>
+      <!----------------------------------- Slider (jumbotron)----------------------------------------->
+    <div class="slider">
+        <div class="jumbotron mb-0">
+          <div class="container">
+            <h1>Vous souhaitez nous contacter ?</h1>
+            <p>Lassez-nous un message ou contactez nous par téléphone</p>
+          </div>
+        </div>
+      </div>
+          <!------------------------------------------ Main  ----------------------------------------------->
+    <main class="row row-cols-1 row-cols-lg-2 no-gutters mt-4">
+        <div class="col-12 col-lg-12 px-3"><h1>Contactez nous</h1></div>
+        <section class="col-12 col-lg-9 px-3"><!----------------section--------------->
+          <div class="row row-cols-1 row-cols-lg-2">
+            <div class="col mb-4">
+              <form>
+                <div class="form-group">
+                  <label for="name">Nom</label>
+                  <input name="name" type="text" class="form-control" id="name">
+                </div>
+                <div class="form-group">
+                  <label for="email">Adresse email</label>
+                  <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                  <label for="sujet">Sujet</label>
+                  <input name="sujet" type="text" class="form-control" id="sujet">
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea name="message" type="text" class="form-control" id="message"></textarea>
+                </div>
+                <button id="submit" type="submit" class="btn btn-danger text-white">Envoyer</button>
+              </form>
+            </div>
+            <div class="col bg-danger text-white mb-4 pb-4">
+              <h2>Adresse</h2>
+              <ul class="list-unstyled">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill"
+                    viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg> Association Tutti Musiciens à Coulommier
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                  </svg> <a class="text-white" href="tel:1234567890">1234567890</a> 
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                  </svg> <a class="text-white" href="mailto:contact@tuttimusiciens.org">contact@tuttimusiciens.org</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <aside class="col-12 col-lg-3 px-3"><!--------------------Aside-------------------->
+          <div class="aside bg-danger text-white p-3 mb-4">
+            <h5>Evenéments à venir</h5>
+          </div>
+          <div class="mb-4">
+            <div class="aside-card">
+              <div class="card-body">
+                <h5 class="card-title">Fête de la musique</h5>
+                <p class="card-text"> Venez nombreux
+                    
+                </p>
+                <a href="event.html" class="btn btn-danger">Lire plus</a>
+              </div>
+            </div>
+          </div>
+          
+        </aside>
+      </main>
+    <!------------------------------------------ Footer  ----------------------------------------------->
+    <footer class="row no-gutters bg-danger text-white justify-content-center align-content-center">
+        <p class="m-0">tuttimusiciens &copy Tous droits réservés 2021</p>
+      </footer>
       </body>
       </html>
