@@ -5,17 +5,17 @@ body , html , .wrapper {
     padding: 0;
     height: auto;
     width: 100%;
-}
-h1 , h2 {
+  }
+  h1 , h2 {
     margin: 2rem 0 2rem 0;
-}
-h1{
+  }
+  h1{
     text-align: center;
-}
-h5 {
+  }
+  h5 {
     margin: 0;
-}
-.wrapper {
+  }
+  .wrapper {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 18vh auto auto 10vh;
@@ -25,4 +25,125 @@ h5 {
     "main"
     "footer"
     ;
-}
+  }
+  .blog-header{
+    height: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .blog-header ul {
+    display: none;
+  }
+  .socials-icons {
+    color: rgb(177, 24, 24);
+  }
+  .bi-facebook:hover {
+    color:#3b5998 ;
+  }
+  .bi-twitter:hover {
+    color:#00acee ;
+  }
+  .bi-youtube:hover {
+    color:#c4302b ;
+  }
+  .bi-instagram:hover {
+    color:#8f0606 ;
+  }
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+  .don-btn-m {
+    display: block;
+    margin-right: 0.5rem;
+  }
+  .don-btn {
+    display: none;
+  }
+  .slider {
+    grid-area: slider;
+    margin-top: 0.5rem;
+  }
+  .jumbotron  {
+    background-image: url("../img/bg-jumbotron.jpg");
+    background-size: cover;
+    color: white;
+    border-radius: 0;
+  }
+  .breadcrump {
+    margin-bottom: -1em;
+  }
+  .event  {
+    background-image: url("../img/event-img.jpg");
+    background-size: cover;
+    color: white;
+    border-radius: 0;
+  }
+  main {
+    grid-area: main;
+  }
+  .card-body {
+    transition: background-color 0.5s;
+  }
+  .card-body:hover {
+    background-color: #74767a9a;
+  }
+  .aside-card {
+    height: auto;
+    background-image: url("../img/aside-bg-music.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    color: white;
+    transition: background-size 0.5s;
+  }
+  .aside-card:hover{
+    background-size: 120%;
+  }
+  footer {
+    grid-area: footer;
+  }
+  /* Responsive embed Youtube */
+  .video-container {
+      overflow: hidden;
+      position: relative;
+      width:100%;
+  }
+  .video-container::after {
+      padding-top: 56.25%;
+      display: block;
+      content: '';
+  }
+  .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
+  /* @media screen ≥768px   */
+  @media screen and (min-width:768px) {
+  
+    h1{
+      text-align: left;
+    }
+      .wrapper{
+      grid-template-rows: 13vh auto auto 10vh;
+    } 
+    .blog-header{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+      .don-btn-m {
+      display: none;
+    }
+    .don-btn{
+      display: block;
+    }
+      .blog-header ul {
+      display: flex;
+    }
+  }
